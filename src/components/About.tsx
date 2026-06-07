@@ -136,7 +136,7 @@ export default function About() {
                             </li>
                             <li className="flex items-center gap-4 hover:text-blue-400 transition-colors">
                                 <span className="text-xl shrink-0">🔗</span>
-                                <a href="https://www.linkedin.com/in/kartikeya-mishra" target="_blank" rel="noreferrer" className="truncate">
+                                <a href="https://www.linkedin.com/in/kartikeya--mishra" target="_blank" rel="noreferrer" className="truncate">
                                     LinkedIn Profile
                                 </a>
                             </li>
