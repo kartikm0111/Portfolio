@@ -2,10 +2,12 @@ import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Background from "@/components/Background";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#121212] flex flex-col">
+    <main className="min-h-screen bg-transparent flex flex-col relative">
+      <Background />
       {/* 
         The ScrollyCanvas takes 500vh to allow for enough scroll distance
         The Overlay sits inside the ScrollyCanvas as a child or sibling depending on architecture.
