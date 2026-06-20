@@ -15,9 +15,9 @@ A premium, high-performance personal portfolio website built with **Next.js 14**
 ## 🌟 Key Features
 
 * **High-Performance Canvas Scrollytelling:** Maps 120 high-resolution image frames to viewport scroll depth via React hooks and Framer Motion's `useScroll`. Implements custom ratio math for a perfect CSS-like `object-fit: cover` scaling on resize.
-* **Interactive Project Showcase:** Responsive glassmorphism project cards featuring direct links to source code and presentations:
-  * **Multi-Room Real-Time Chat Application** (TCP Sockets, Multithreading, custom protocol, Tkinter GUI, Pinggy Tunneling).
-  * **AI Smart Allocation Engine** (C++ logic matching backend, React/Node frontend, AWS, Figma).
+* **Interactive Project Showcase:** Responsive glassmorphism project cards featuring direct links to source code and presentations/demos:
+  * **Multi-Room Real-Time Chat Application** (TCP Sockets, Multithreading, custom protocol, Tkinter GUI, Pinggy Tunneling). [GitHub Repository](https://github.com/hrittik702/Chat-Room).
+  * **SIH Smart Allocation Engine** (C++ logic matching backend, React/Node frontend, AWS, Figma). [GitHub Repo](https://github.com/kartikm0111/Smart-allotcation-engine-) | [Live Demo](https://smart-allotcation-engine-esuk37k98.vercel.app/).
 * **Parallax Text Overlays:** Dynamic section headers using `mix-blend-difference` to maintain contrast over light and dark segments of the background image playback.
 * **Aesthetic Ambient Background:** Floating `framer-motion` neon orbs overlaying an interactive, responsive grid mask to give a premium, breathing tech vibe.
 

@@ -20,7 +20,7 @@ export default function About() {
                         <p className="text-lg text-gray-400 leading-relaxed">
                             I&apos;m Kartikeya Mishra, an Information Technology student at Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow.
                             <br /><br />
-                            I combine a passion for innovation with hands-on experience in software development. My technical toolkit features Artificial Intelligence, C++, Java, and Python, which I have applied to architect practical solutions like an AI smart allocation engine, a blockchain platform for agricultural produce, and a functional Python chat room.
+                            I combine a passion for innovation with hands-on experience in software development. My technical toolkit features Artificial Intelligence, C++, Java, and Python, which I have applied to architect practical solutions like the SIH Smart Allocation Engine, a blockchain platform for agricultural produce, and a functional Python chat room.
                             <br /><br />
                             I am dedicated to continuous learning, collaborative problem-solving, and staying active in sports to foster a healthy, forward-thinking mindset. Currently, I am seeking opportunities in <strong>Software Development Associate</strong> and other software roles.
                         </p>
