@@ -16,6 +16,7 @@ A premium, high-performance personal portfolio website built with **Next.js 14**
 
 * **High-Performance Canvas Scrollytelling:** Maps 120 high-resolution image frames to viewport scroll depth via React hooks and Framer Motion's `useScroll`. Implements custom ratio math for a perfect CSS-like `object-fit: cover` scaling on resize.
 * **Interactive Project Showcase:** Responsive glassmorphism project cards featuring direct links to source code and presentations/demos:
+  * **Clutch - Last-Minute Life Saver** (React 19, Vite 6, Tailwind CSS v4, Motion, Node.js, Google GenAI SDK, GCP Cloud Run, Docker). [GitHub Repo](https://github.com/kartikm0111/Last-Minute-Life-Saver) | [Live Demo](https://last-minute-life-saver-66486866208.asia-southeast1.run.app/).
   * **Multi-Room Real-Time Chat Application** (TCP Sockets, Multithreading, custom protocol, Tkinter GUI, Pinggy Tunneling). [GitHub Repository](https://github.com/hrittik702/Chat-Room).
   * **SIH Smart Allocation Engine** (C++ logic matching backend, React/Node frontend, AWS, Figma). [GitHub Repo](https://github.com/kartikm0111/Smart-allotcation-engine-) | [Live Demo](https://smart-allotcation-engine-esuk37k98.vercel.app/).
 * **Parallax Text Overlays:** Dynamic section headers using `mix-blend-difference` to maintain contrast over light and dark segments of the background image playback.

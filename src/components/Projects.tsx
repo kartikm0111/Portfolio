@@ -6,21 +6,22 @@ import { useState } from "react";
 
 const projects = [
     {
-        title: "Multi-Room Real-Time Chat Application",
-        category: "Network Programming",
-        timeline: "Apr 2026 - May 2026",
-        description: "Developed a real-time, multi-room chat application from scratch using raw Python sockets and TCP networking. Designed a custom text-based communication protocol featuring a 3-phase connection lifecycle (Handshake, History Replay, and Message Loop).",
+        title: "Clutch - Last-Minute Life Saver",
+        category: "AI & Productivity",
+        timeline: "Jun 2026 - Present",
+        description: "A premium productivity platform and crisis companion designed to eliminate analysis paralysis and starting friction during high-stakes deadlines.",
+        inspiration: "Created to help developers and professionals overcome high-stakes deadline panic by instantly diagnosing task complexity and providing structured focus assistance.",
         highlights: [
-            "Custom 3-phase communication protocol (Handshake, History Replay, Message Loop).",
-            "Multi-threaded concurrency with daemon threads and mutex locking for thread safety.",
-            "Responsive, Catppuccin-themed graphical user interface (GUI) built with Tkinter.",
-            "Server-side persistent chat history via custom file I/O operations.",
-            "Utilized Pinggy TCP tunneling to expose the local server to remote clients."
+            "Aura AI prioritizer engine that converts task density into structured 30-minute milestones.",
+            "Crisis mode utilizing Google GenAI SDK for real-time synthesized voice coaching (Modality.AUDIO).",
+            "Responsive React 19 / Vite 6 interface with spring-physics Framer Motion v12 animations.",
+            "Redundant fallback network across Gemini 2.5-pro, 2.5-flash, 2.0-flash, and 2.0-lite models.",
+            "Docker-containerized Node.js backend hosted on GCP Cloud Run with automated continuous deployment."
         ],
-        tech: ["Python", "Sockets", "Threading", "Tkinter", "Pinggy", "TCP/IP"],
-        github: "https://github.com/hrittik702/Chat-Room",
-        live: "",
-        image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=2000&auto=format&fit=crop"
+        tech: ["React 19", "Vite 6", "Tailwind v4", "Framer Motion", "Node.js", "Docker", "GCP Cloud Run", "Gemini AI"],
+        github: "https://github.com/kartikm0111/Last-Minute-Life-Saver",
+        live: "https://last-minute-life-saver-66486866208.asia-southeast1.run.app/",
+        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop"
     },
     {
         title: "SIH Smart Allocation Engine",
@@ -38,6 +39,23 @@ const projects = [
         github: "https://github.com/kartikm0111/Smart-allotcation-engine-",
         live: "https://smart-allotcation-engine-esuk37k98.vercel.app/",
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
+    },
+    {
+        title: "Multi-Room Real-Time Chat Application",
+        category: "Network Programming",
+        timeline: "Apr 2026 - May 2026",
+        description: "Developed a real-time, multi-room chat application from scratch using raw Python sockets and TCP networking. Designed a custom text-based communication protocol featuring a 3-phase connection lifecycle (Handshake, History Replay, and Message Loop).",
+        highlights: [
+            "Custom 3-phase communication protocol (Handshake, History Replay, Message Loop).",
+            "Multi-threaded concurrency with daemon threads and mutex locking for thread safety.",
+            "Responsive, Catppuccin-themed graphical user interface (GUI) built with Tkinter.",
+            "Server-side persistent chat history via custom file I/O operations.",
+            "Utilized Pinggy TCP tunneling to expose the local server to remote clients."
+        ],
+        tech: ["Python", "Sockets", "Threading", "Tkinter", "Pinggy", "TCP/IP"],
+        github: "https://github.com/hrittik702/Chat-Room",
+        live: "",
+        image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=2000&auto=format&fit=crop"
     }
 ];
 
@@ -60,7 +78,7 @@ export default function Projects() {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, idx) => (
                         <motion.div
                             key={project.title}
@@ -71,7 +89,7 @@ export default function Projects() {
                             className="group flex flex-col rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md transition-all hover:border-white/20 shadow-xl"
                         >
                             {/* Visual Header */}
-                            <div className="relative h-[240px] w-full overflow-hidden">
+                            <div className="relative h-[200px] w-full overflow-hidden">
                                 <img
                                     src={project.image}
                                     alt={project.title}
@@ -89,13 +107,13 @@ export default function Projects() {
                             </div>
 
                             {/* Content */}
-                            <div className="p-8 flex-1 flex flex-col justify-between">
+                            <div className="p-6 md:p-8 flex-1 flex flex-col justify-between">
                                 <div>
-                                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
+                                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors line-clamp-2">
                                         {project.title}
                                     </h3>
                                     
-                                    <p className="text-gray-400 leading-relaxed mb-6 text-sm md:text-base">
+                                    <p className="text-gray-400 leading-relaxed mb-6 text-sm">
                                         {project.description}
                                     </p>
 
@@ -127,12 +145,12 @@ export default function Projects() {
                                                 {project.inspiration && (
                                                     <div>
                                                         <h4 className="font-semibold text-white mb-1">Inspiration & Context:</h4>
-                                                        <p className="text-gray-400 leading-relaxed">{project.inspiration}</p>
+                                                        <p className="text-gray-400 leading-relaxed text-xs">{project.inspiration}</p>
                                                     </div>
                                                 )}
                                                 <div>
                                                     <h4 className="font-semibold text-white mb-1">Key Features:</h4>
-                                                    <ul className="list-disc list-inside space-y-1 text-gray-400">
+                                                    <ul className="list-disc list-inside space-y-1 text-gray-400 text-xs">
                                                         {project.highlights.map((h, i) => (
                                                             <li key={i}>{h}</li>
                                                         ))}
@@ -150,12 +168,12 @@ export default function Projects() {
                                             href={project.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-500 text-white font-medium hover:bg-blue-600 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all text-sm"
+                                            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-500 text-white font-medium hover:bg-blue-600 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all text-xs"
                                         >
                                             <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                                                 <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
                                             </svg>
-                                            GitHub Repo
+                                            GitHub
                                         </a>
                                     )}
 
@@ -164,7 +182,7 @@ export default function Projects() {
                                             href={project.live}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-purple-500 text-white font-medium hover:bg-purple-600 hover:shadow-[0_0_20px_rgba(147,51,234,0.3)] transition-all text-sm"
+                                            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-purple-500 text-white font-medium hover:bg-purple-600 hover:shadow-[0_0_20px_rgba(147,51,234,0.3)] transition-all text-xs"
                                         >
                                             <svg className="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
                                                 <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
