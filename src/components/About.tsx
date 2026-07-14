@@ -68,6 +68,14 @@ export default function About() {
                         <div className="space-y-6">
                             <div className="p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm hover:border-white/20 transition-all">
                                 <div className="flex justify-between items-start mb-2">
+                                    <h3 className="text-2xl font-semibold text-blue-400">Front-end AI Engineering Intern</h3>
+                                    <span className="text-gray-400 text-sm">Jun 2026 - Present</span>
+                                </div>
+                                <p className="text-white font-medium mb-2">FlyRank AI</p>
+                                <p className="text-gray-400 leading-relaxed text-sm">Currently interning at FlyRank AI as an AI intern, focusing on Front-end AI Engineering.</p>
+                            </div>
+                            <div className="p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm hover:border-white/20 transition-all">
+                                <div className="flex justify-between items-start mb-2">
                                     <h3 className="text-2xl font-semibold text-blue-400">Tech & Outreach Internship</h3>
                                     <span className="text-gray-400 text-sm">Sep 2025 - Nov 2025</span>
                                 </div>
