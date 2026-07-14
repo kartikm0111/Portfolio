@@ -21,7 +21,7 @@ const projects = [
         tech: ["React 19", "Vite 6", "Tailwind v4", "Framer Motion", "Node.js", "Docker", "GCP Cloud Run", "Gemini AI"],
         github: "https://github.com/kartikm0111/Last-Minute-Life-Saver",
         live: "https://last-minute-life-saver-66486866208.asia-southeast1.run.app/",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop"
+        image: "/projects/clutch.png"
     },
     {
         title: "SIH Smart Allocation Engine",
@@ -38,7 +38,7 @@ const projects = [
         tech: ["C++", "React", "Node.js", "AWS", "APIs", "Figma"],
         github: "https://github.com/kartikm0111/Smart-allotcation-engine-",
         live: "https://smart-allotcation-engine-esuk37k98.vercel.app/",
-        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
+        image: "/projects/smart-allocation.png"
     },
     {
         title: "Multi-Room Real-Time Chat Application",
@@ -55,7 +55,7 @@ const projects = [
         tech: ["Python", "Sockets", "Threading", "Tkinter", "Pinggy", "TCP/IP"],
         github: "https://github.com/hrittik702/Chat-Room",
         live: "",
-        image: "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=2000&auto=format&fit=crop"
+        image: "/projects/chat-room.png"
     }
 ];
 
